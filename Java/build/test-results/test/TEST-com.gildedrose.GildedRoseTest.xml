@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gildedrose.GildedRoseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-06T21:28:35" hostname="MacBook Pro" time="0.023">
+  <properties/>
+  <testcase name="foo()" classname="com.gildedrose.GildedRoseTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
