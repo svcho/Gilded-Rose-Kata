@@ -1,0 +1,106 @@
+
+dScenario: Aged brie increases in quality by 1 before sellIn # src/test/resources/AgedBrie.feature:3
+�  Given item named "Aged Brie" with quality 10 and sellIn 2 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+p  When 1 days pass                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 11 and sellIn should be 1          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+eScenario: Aged brie increases in quality by 2 after sellIn   # src/test/resources/AgedBrie.feature:8
+�  Given item named "Aged Brie" with quality 10 and sellIn -1 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+q  When 1 days pass                                           # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 12 and sellIn should be -2          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+eScenario: Aged brie quality does not rise over 50           # src/test/resources/AgedBrie.feature:13
+�  Given item named "Aged Brie" with quality 50 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+p  When 1 days pass                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 50 and sellIn should be 4          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+�Scenario: Double quality increase within 10 days of expiration for sellIn 10                 # src/test/resources/BackstagePass.feature:3
+�  Given item named "Backstage passes to a TAFKAL80ETC concert" with quality 10 and sellIn 10 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+�  When 1 days pass                                                                           # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 12 and sellIn should be 9                                           # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+�Scenario: Double quality increase within 10 days of expiration for sellIn 7                 # src/test/resources/BackstagePass.feature:8
+�  Given item named "Backstage passes to a TAFKAL80ETC concert" with quality 10 and sellIn 7 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+�  When 1 days pass                                                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 12 and sellIn should be 6                                          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+�Scenario: Triple quality increase within 5 days of expiration for sellIn 5                  # src/test/resources/BackstagePass.feature:13
+�  Given item named "Backstage passes to a TAFKAL80ETC concert" with quality 10 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+�  When 1 days pass                                                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 13 and sellIn should be 4                                          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+	
+	�Scenario: Triple quality increase within 5 days of expiration for sellIn 2                  # src/test/resources/BackstagePass.feature:18
+	�  Given item named "Backstage passes to a TAFKAL80ETC concert" with quality 10 and sellIn 2 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+	�  When 1 days pass                                                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+	�  Then quality should be 13 and sellIn should be 1                                          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+
+
+�Scenario: Loose quality when pass is expired                                                # src/test/resources/BackstagePass.feature:23
+
+�  Given item named "Backstage passes to a TAFKAL80ETC concert" with quality 10 and sellIn 0 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+
+�  When 1 days pass                                                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+
+�  Then quality should be 0 and sellIn should be -1                                          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+�Scenario: Backstage pass quality does not rise over 50                                      # src/test/resources/BackstagePass.feature:28
+�  Given item named "Backstage passes to a TAFKAL80ETC concert" with quality 50 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+�  When 1 days pass                                                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 50 and sellIn should be 4                                          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+fScenario: Quality should never be negative                # src/test/resources/ConjuredItem.feature:3
+�  Given item named "Conjured" with quality 0 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+n  When 1 days pass                                        # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 0 and sellIn should be 4         # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+jScenario: Quality should degrade by 2 before expiration       # src/test/resources/ConjuredItem.feature:8
+�  Given item named "ConjuredBow" with quality 50 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+r  When 1 days pass                                            # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 48 and sellIn should be 4            # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+lScenario: Quality should degrade by 4 after expiration         # src/test/resources/ConjuredItem.feature:13
+�  Given item named "ConjuredTest" with quality 50 and sellIn 0 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+s  When 1 days pass                                             # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 46 and sellIn should be -1            # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+eScenario: Quality should never be negative                # src/test/resources/DefaultItem.feature:3
+�  Given item named "testItem" with quality 0 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+n  When 1 days pass                                        # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 0 and sellIn should be 4         # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+fScenario: Quality should degrade by 1 before expiration    # src/test/resources/DefaultItem.feature:8
+�  Given item named "testItem" with quality 50 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+o  When 1 days pass                                         # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 49 and sellIn should be 4         # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+gScenario: Quality should degrade by 2 after expiration     # src/test/resources/DefaultItem.feature:13
+�  Given item named "testItem" with quality 50 and sellIn 0 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+o  When 1 days pass                                         # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 48 and sellIn should be -1        # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+hScenario: Quality should degrade by 2 after expiration      # src/test/resources/DefaultItem.feature:18
+�  Given item named "testItem" with quality 55 and sellIn 10 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+p  When 1 days pass                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 50 and sellIn should be 9          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+uScenario: Sulfuras always has the value of 80 and sellIn doesn't change      # src/test/resources/Sulfuras.feature:3
+�  Given item named "Sulfuras, Hand of Ragnaros" with quality 80 and sellIn 0 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+�  When 1 days pass                                                           # com.gildedrose.Tests.days_pass(java.lang.Integer)
+�  Then quality should be 80 and sellIn should be 0                           # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+  �┌───────────────────────────────────────────────────────────────────────────────────┐
+  Z│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+  Z│ Activate publishing with one of the following:                                    │
+  Z│                                                                                   │
+  Z│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+  Z│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+  Z│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+  Z│ JUnit:                                           @CucumberOptions(publish = true) │
+  Z│                                                                                   │
+  Z│ More information at https://reports.cucumber.io/docs/cucumber-jvm                 │
+  Z│                                                                                   │
+  Z│ Disable this message with one of the following:                                   │
+  Z│                                                                                   │
+  Z│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+  Z│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+  �└───────────────────────────────────────────────────────────────────────────────────┘

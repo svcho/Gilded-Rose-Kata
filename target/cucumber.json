@@ -1,0 +1,1366 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-21T18:52:06.257Z",
+        "line": 3,
+        "name": "Aged brie increases in quality by 1 before sellIn",
+        "description": "",
+        "id": "verify-aged-brie-behaviour;aged-brie-increases-in-quality-by-1-before-sellin",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1582000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "item named \"Aged Brie\" with quality 10 and sellIn 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aged Brie\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 36
+                },
+                {
+                  "val": "2",
+                  "offset": 50
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 227000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2302000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "quality should be 11 and sellIn should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 18
+                },
+                {
+                  "val": "1",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.308Z",
+        "line": 8,
+        "name": "Aged brie increases in quality by 2 after sellIn",
+        "description": "",
+        "id": "verify-aged-brie-behaviour;aged-brie-increases-in-quality-by-2-after-sellin",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 219000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "item named \"Aged Brie\" with quality 10 and sellIn -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aged Brie\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 36
+                },
+                {
+                  "val": "-1",
+                  "offset": 50
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "quality should be 12 and sellIn should be -2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 18
+                },
+                {
+                  "val": "-2",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.315Z",
+        "line": 13,
+        "name": "Aged brie quality does not rise over 50",
+        "description": "",
+        "id": "verify-aged-brie-behaviour;aged-brie-quality-does-not-rise-over-50",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 272000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "item named \"Aged Brie\" with quality 50 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aged Brie\"",
+                  "offset": 11
+                },
+                {
+                  "val": "50",
+                  "offset": 36
+                },
+                {
+                  "val": "5",
+                  "offset": 50
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 570000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 269000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "quality should be 50 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Aged Brie behaviour",
+    "description": "",
+    "id": "verify-aged-brie-behaviour",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AgedBrie.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-21T18:52:06.322Z",
+        "line": 3,
+        "name": "Double quality increase within 10 days of expiration for sellIn 10",
+        "description": "",
+        "id": "verify-backstage-pass-behaviour;double-quality-increase-within-10-days-of-expiration-for-sellin-10",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 197000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "item named \"Backstage passes to a TAFKAL80ETC concert\" with quality 10 and sellIn 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Backstage passes to a TAFKAL80ETC concert\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 68
+                },
+                {
+                  "val": "10",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "quality should be 12 and sellIn should be 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 18
+                },
+                {
+                  "val": "9",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.331Z",
+        "line": 8,
+        "name": "Double quality increase within 10 days of expiration for sellIn 7",
+        "description": "",
+        "id": "verify-backstage-pass-behaviour;double-quality-increase-within-10-days-of-expiration-for-sellin-7",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 206000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "item named \"Backstage passes to a TAFKAL80ETC concert\" with quality 10 and sellIn 7",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Backstage passes to a TAFKAL80ETC concert\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 68
+                },
+                {
+                  "val": "7",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 210000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "quality should be 12 and sellIn should be 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 18
+                },
+                {
+                  "val": "6",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.339Z",
+        "line": 13,
+        "name": "Triple quality increase within 5 days of expiration for sellIn 5",
+        "description": "",
+        "id": "verify-backstage-pass-behaviour;triple-quality-increase-within-5-days-of-expiration-for-sellin-5",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 674000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "item named \"Backstage passes to a TAFKAL80ETC concert\" with quality 10 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Backstage passes to a TAFKAL80ETC concert\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 68
+                },
+                {
+                  "val": "5",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "quality should be 13 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "13",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.346Z",
+        "line": 18,
+        "name": "Triple quality increase within 5 days of expiration for sellIn 2",
+        "description": "",
+        "id": "verify-backstage-pass-behaviour;triple-quality-increase-within-5-days-of-expiration-for-sellin-2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 258000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "item named \"Backstage passes to a TAFKAL80ETC concert\" with quality 10 and sellIn 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Backstage passes to a TAFKAL80ETC concert\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 68
+                },
+                {
+                  "val": "2",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 201000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "quality should be 13 and sellIn should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "13",
+                  "offset": 18
+                },
+                {
+                  "val": "1",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.352Z",
+        "line": 23,
+        "name": "Loose quality when pass is expired",
+        "description": "",
+        "id": "verify-backstage-pass-behaviour;loose-quality-when-pass-is-expired",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 234000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "item named \"Backstage passes to a TAFKAL80ETC concert\" with quality 10 and sellIn 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Backstage passes to a TAFKAL80ETC concert\"",
+                  "offset": 11
+                },
+                {
+                  "val": "10",
+                  "offset": 68
+                },
+                {
+                  "val": "0",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 246000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "quality should be 0 and sellIn should be -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 18
+                },
+                {
+                  "val": "-1",
+                  "offset": 41
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.358Z",
+        "line": 28,
+        "name": "Backstage pass quality does not rise over 50",
+        "description": "",
+        "id": "verify-backstage-pass-behaviour;backstage-pass-quality-does-not-rise-over-50",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 298000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "item named \"Backstage passes to a TAFKAL80ETC concert\" with quality 50 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Backstage passes to a TAFKAL80ETC concert\"",
+                  "offset": 11
+                },
+                {
+                  "val": "50",
+                  "offset": 68
+                },
+                {
+                  "val": "5",
+                  "offset": 82
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 173000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "quality should be 50 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify backstage pass behaviour",
+    "description": "",
+    "id": "verify-backstage-pass-behaviour",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/BackstagePass.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-21T18:52:06.363Z",
+        "line": 3,
+        "name": "Quality should never be negative",
+        "description": "",
+        "id": "verify-conjured-item-behaviour;quality-should-never-be-negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 146000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "item named \"Conjured\" with quality 0 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Conjured\"",
+                  "offset": 11
+                },
+                {
+                  "val": "0",
+                  "offset": 35
+                },
+                {
+                  "val": "5",
+                  "offset": 48
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 215000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 188000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "quality should be 0 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 41
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.370Z",
+        "line": 8,
+        "name": "Quality should degrade by 2 before expiration",
+        "description": "",
+        "id": "verify-conjured-item-behaviour;quality-should-degrade-by-2-before-expiration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 217000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "item named \"ConjuredBow\" with quality 50 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ConjuredBow\"",
+                  "offset": 11
+                },
+                {
+                  "val": "50",
+                  "offset": 38
+                },
+                {
+                  "val": "5",
+                  "offset": 52
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "quality should be 48 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "48",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.377Z",
+        "line": 13,
+        "name": "Quality should degrade by 4 after expiration",
+        "description": "",
+        "id": "verify-conjured-item-behaviour;quality-should-degrade-by-4-after-expiration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 234000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "item named \"ConjuredTest\" with quality 50 and sellIn 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ConjuredTest\"",
+                  "offset": 11
+                },
+                {
+                  "val": "50",
+                  "offset": 39
+                },
+                {
+                  "val": "0",
+                  "offset": 53
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "quality should be 46 and sellIn should be -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "46",
+                  "offset": 18
+                },
+                {
+                  "val": "-1",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify conjured item behaviour",
+    "description": "",
+    "id": "verify-conjured-item-behaviour",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/ConjuredItem.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-21T18:52:06.383Z",
+        "line": 3,
+        "name": "Quality should never be negative",
+        "description": "",
+        "id": "verify-default-item-behaviour;quality-should-never-be-negative",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 281000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "item named \"testItem\" with quality 0 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testItem\"",
+                  "offset": 11
+                },
+                {
+                  "val": "0",
+                  "offset": 35
+                },
+                {
+                  "val": "5",
+                  "offset": 48
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5140000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "quality should be 0 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 41
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.396Z",
+        "line": 8,
+        "name": "Quality should degrade by 1 before expiration",
+        "description": "",
+        "id": "verify-default-item-behaviour;quality-should-degrade-by-1-before-expiration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 201000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "item named \"testItem\" with quality 50 and sellIn 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testItem\"",
+                  "offset": 11
+                },
+                {
+                  "val": "50",
+                  "offset": 35
+                },
+                {
+                  "val": "5",
+                  "offset": 49
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "quality should be 49 and sellIn should be 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "49",
+                  "offset": 18
+                },
+                {
+                  "val": "4",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.400Z",
+        "line": 13,
+        "name": "Quality should degrade by 2 after expiration",
+        "description": "",
+        "id": "verify-default-item-behaviour;quality-should-degrade-by-2-after-expiration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 144000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "item named \"testItem\" with quality 50 and sellIn 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testItem\"",
+                  "offset": 11
+                },
+                {
+                  "val": "50",
+                  "offset": 35
+                },
+                {
+                  "val": "0",
+                  "offset": 49
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "quality should be 48 and sellIn should be -1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "48",
+                  "offset": 18
+                },
+                {
+                  "val": "-1",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T18:52:06.405Z",
+        "line": 18,
+        "name": "Quality should degrade by 2 after expiration",
+        "description": "",
+        "id": "verify-default-item-behaviour;quality-should-degrade-by-2-after-expiration",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 630000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "item named \"testItem\" with quality 55 and sellIn 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testItem\"",
+                  "offset": 11
+                },
+                {
+                  "val": "55",
+                  "offset": 35
+                },
+                {
+                  "val": "10",
+                  "offset": 49
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 290000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 365000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "quality should be 50 and sellIn should be 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 18
+                },
+                {
+                  "val": "9",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify default item behaviour",
+    "description": "",
+    "id": "verify-default-item-behaviour",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/DefaultItem.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-21T18:52:06.411Z",
+        "line": 3,
+        "name": "Sulfuras always has the value of 80 and sellIn doesn\u0027t change",
+        "description": "",
+        "id": "verify-sulfuras-behaviour;sulfuras-always-has-the-value-of-80-and-sellin-doesn-t-change",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 211000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "item named \"Sulfuras, Hand of Ragnaros\" with quality 80 and sellIn 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sulfuras, Hand of Ragnaros\"",
+                  "offset": 11
+                },
+                {
+                  "val": "80",
+                  "offset": 53
+                },
+                {
+                  "val": "0",
+                  "offset": 67
+                }
+              ],
+              "location": "com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "1 days pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 0
+                }
+              ],
+              "location": "com.gildedrose.Tests.days_pass(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "quality should be 80 and sellIn should be 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "80",
+                  "offset": 18
+                },
+                {
+                  "val": "0",
+                  "offset": 42
+                }
+              ],
+              "location": "com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify Sulfuras behaviour",
+    "description": "",
+    "id": "verify-sulfuras-behaviour",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Sulfuras.feature",
+    "tags": []
+  }
+]

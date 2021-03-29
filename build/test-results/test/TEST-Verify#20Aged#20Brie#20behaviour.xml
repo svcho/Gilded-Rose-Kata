@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Verify Aged Brie behaviour" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-21T18:52:06" hostname="Workbook Pro" time="0.157">
+  <properties/>
+  <testcase name="Aged brie increases in quality by 1 before sellIn" classname="Verify Aged Brie behaviour" time="0.141"/>
+  <testcase name="Aged brie increases in quality by 2 after sellIn" classname="Verify Aged Brie behaviour" time="0.007"/>
+  <testcase name="Aged brie quality does not rise over 50" classname="Verify Aged Brie behaviour" time="0.009"/>
+  <system-out><![CDATA[
+Scenario: Aged brie increases in quality by 1 before sellIn # src/test/resources/AgedBrie.feature:3
+  Given item named "Aged Brie" with quality 10 and sellIn 2 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+  When 1 days pass                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+  Then quality should be 11 and sellIn should be 1          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+Scenario: Aged brie increases in quality by 2 after sellIn   # src/test/resources/AgedBrie.feature:8
+  Given item named "Aged Brie" with quality 10 and sellIn -1 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+  When 1 days pass                                           # com.gildedrose.Tests.days_pass(java.lang.Integer)
+  Then quality should be 12 and sellIn should be -2          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+
+Scenario: Aged brie quality does not rise over 50           # src/test/resources/AgedBrie.feature:13
+  Given item named "Aged Brie" with quality 50 and sellIn 5 # com.gildedrose.Tests.item_named_with_quality_and_sell_in(java.lang.String,java.lang.Integer,java.lang.Integer)
+  When 1 days pass                                          # com.gildedrose.Tests.days_pass(java.lang.Integer)
+  Then quality should be 50 and sellIn should be 4          # com.gildedrose.Tests.quality_should_be_and_sell_in_should_be(java.lang.Integer,java.lang.Integer)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
